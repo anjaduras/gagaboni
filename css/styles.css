@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  background-color: #fffdf5;
+}
+
+/* Header & Nav */
+header {
+  padding: 100px;
+  background-color: #00174c;
+  color: #fffdf5;
+}
+
+nav {
+  margin-top: 1%;
+  text-align: right;
+}
+
+/* Text */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  margin-top: 3%;
+}
+
+.subheader {
+  color: #809bce;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Buttons */
+.navbutton {
+  background-color: #4a90e2;
+  padding: 1%;
+  border-color: #037e84;
+  border-style: double;
+  border-radius: 10%;
+  color: #eeeeee;
+}
+
+.navbutton:hover {
+  background-color: #034c84;
+  transition: 0.5s;
+}
+
+button a {
+  color: #eeeeee;
+  font-weight: 800;
+}
+
+/* Layout */
+main {
+  padding: 5%;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em 2em;
+}
+
+@media (min-width: 768px) {
+  .grid2 {
+    grid-template-columns: repeat(auto-fit, minmax(0%, 1fr));
+  }
+}
+
+/* Grid for LOGIN*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr); 
+  gap: 10px; 
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.startbutton {
+  background-color:#4a90e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px; 
+  width: 100%; 
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.startbutton:hover{
+  background-color:#4587d3;
+}
+
+/* Form Styling */
+.contact-form-container,
+.login-container {
+  margin: auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  text-align: left;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+input,
+textarea {
+  border: 1px solid #ddd;
+  color: #333;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+  display: none;
+}
+
+/* Footer */
+.footer {
+  padding: 1%;
+  width: 100%;
+  background-color: #00174c;
+  color: #fffdf5;
+}
+
+/* Images */
+figure {
+  margin: 0 0 20px;
+  padding: 0;
+  display: inline-block;
+  max-width: 100%;
+}
+
+figure img {
+  width: 80%;
+  margin: auto;
+  height: auto;
+  display: block;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 8px;
+  color: #00174c;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*TABLE*/
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: auto;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #e0e0e0;
+}
+
+.password {
+  font-family: 'Courier New', monospace;
+}
+
+.important {
+  font-weight: bold;
+  color: #d32f2f; 
+}
+
+/*coded by Anna Duras, 03-2025*/

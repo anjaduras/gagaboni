@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login</title>
+    <meta name="description" content="" />
+    <meta name="author" content="G6" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="navbutton"
+        >🔙</a>
+      <h1>Login</h1>
+      <p class="subheader">
+        Zugang zum Mitarbeiterbereich schaffen 🔐
+      </p>
+    </header>
+
+    <main class="container">
+      <div class="login-container">
+        <form id="authForm" onsubmit="handleAuth(event)">
+          <label for="email">Email<span style="color: red;">*</span></label
+          ><input type="text" id="email" name="username" required /><label
+            for="password"
+            >Passwort<span style="color: red;">*</span></label
+          ><input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><button type="submit">ANMELDEN</button>
+          <p id="error-message" class="error-message"></p>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer" onload="updateTime()">
+      <p><span style="color: #ffd500">©</span>Anna Duras, 2025</p>
+      <p>Alle Rechte vorbehalten.</p>
+      <p class="time">
+        <span style="color: #ffd500">Aktuelle Uhrzeit: </span
+        ><span id="time"></span>
+      </p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
