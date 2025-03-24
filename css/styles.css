@@ -8,14 +8,14 @@
 body {
   margin: 0%;
   padding: 0%;
-  background-color: #fffdf5;
+  background-color: #FEF9E1;
 }
 
 /* Header & Nav */
 header {
   padding: 100px;
-  background-color: #00174c;
-  color: #fffdf5;
+  background-color: #6D2323;
+  color: #FEF9E1;
 }
 
 nav {
@@ -152,8 +152,8 @@ textarea {
 .footer {
   padding: 1%;
   width: 100%;
-  background-color: #00174c;
-  color: #fffdf5;
+  background-color: #6D2323;
+  color: #FEF9E1;
 }
 
 /* Images */
@@ -165,12 +165,10 @@ figure {
 }
 
 figure img {
-  width: 80%;
-  margin: auto;
+  width: 300px;
   height: auto;
   display: block;
   padding: 20px;
-  border-radius: 30px;
 }
 
 figcaption {
