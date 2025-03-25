@@ -171,6 +171,11 @@ figure img {
   padding: 20px;
 }
 
+figure img:hover{
+  transform: rotate(180deg);
+  transition: 2s;
+}
+
 figcaption {
   text-align: center;
   font-size: 25px;
