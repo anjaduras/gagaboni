@@ -4,26 +4,6 @@ function updateTime() {
     document.getElementById("time").innerText = now.toLocaleDateString(undefined, options) + " " + now.toLocaleTimeString(undefined, { hour: '2-digit', minute: '2-digit', second: '2-digit'});
 }
 setInterval(updateTime, 1000);
-
- // Login
-  
-  function handleAuth(event) {
-    event.preventDefault();
-  
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const errorMessage = document.getElementById('error-message');
-  
-    const validEmail = 'user@SchoenesGlas.de';
-    const validPassword = '0ptikerKette';
-  
-    if (email === validEmail && password === validPassword) {
-      alert('Erfolgreich angemeldet!');
-      window.location.href = './workers.html';
-    } else {
-      errorMessage.textContent = 'Ungültiger Benutzername oder ungültiges Passwort. Bitte versuchen Sie es erneut.';
-    }
-  }
   
   // Design
 
@@ -41,5 +21,19 @@ setInterval(updateTime, 1000);
       });
     });
   });
+
+  // Last updated
+
+  const lastModified = new Date(document.lastModified);
+    const options = {
+      year: "numeric",
+      month: "numeric",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+    };
+    document.getElementById("last-updated").textContent =
+      "Last updated on " +
+      lastModified.toLocaleDateString(undefined, options);
 
   // coded by Anna Duras, 03-2025
