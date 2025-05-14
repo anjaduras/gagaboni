@@ -85,22 +85,6 @@ main {
   margin: auto;
 }
 
-.startbutton {
-  background-color: #4a90e2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
-  width: 100%;
-  border: none;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 8px;
-}
-
 .startbutton:hover {
   background-color: #4587d3;
 }
@@ -141,14 +125,6 @@ textarea {
   color: #333;
 }
 
-/* Error Message */
-.error {
-  color: red;
-  text-align: center;
-  font-size: 14px;
-  display: none;
-}
-
 /* Footer */
 .footer {
   padding: 1%;
@@ -186,40 +162,3 @@ figcaption {
   font-family: "Montserrat", sans-serif;
 }
 
-/*TABLE*/
-
-table {
-  width: 80%;
-  border-collapse: collapse;
-  margin: auto;
-}
-
-th,
-td {
-  padding: 12px;
-  text-align: center;
-  border: 1px solid #ccc;
-}
-
-th {
-  background-color: #f4f4f4;
-}
-
-tr:nth-child(even) {
-  background-color: #f9f9f9;
-}
-
-tr:hover {
-  background-color: #e0e0e0;
-}
-
-.password {
-  font-family: "Courier New", monospace;
-}
-
-.important {
-  font-weight: bold;
-  color: #d32f2f;
-}
-
-/*coded by Anna Duras, 03-2025*/
