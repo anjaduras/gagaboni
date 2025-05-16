@@ -42,15 +42,7 @@ h1 {
 .navbutton {
   background-color: #4a90e2;
   padding: 1%;
-  border-color: #037e84;
-  border-style: double;
   border-radius: 10%;
-  color: #eeeeee;
-}
-
-.navbutton:hover {
-  background-color: #034c84;
-  transition: 0.5s;
 }
 
 button a {
@@ -86,11 +78,6 @@ main {
   max-width: 500px;
   margin: auto;
 }
-
-.startbutton:hover {
-  background-color: #4587d3;
-}
-
 /* Form Styling */
 .contact-form-container,
 .login-container {
@@ -161,7 +148,6 @@ figcaption {
   font-size: 25px;
   margin-top: 8px;
   color: #00174c;
-  font-family: "Montserrat", sans-serif;
 }
 
 .wrapper {
